@@ -6,14 +6,17 @@
 
 ## Description
 
-_This application takes an input number and will return a message to the user depending on what number it was. Any number with a 3 will be replaced with "I'm sorry, Dave. I'm afraid I can't do that." Any number with a 2 will be replaced with "Boop!" And any number with a 1 will be replaced with "Beep!"_
+_This application takes an input number and will return a message to the user depending on what number it was. Any number with a 3 will be replaced with "I'm sorry, Dave. I'm afraid I can't do that." Any number with a 2 will be replaced with "Boop!" And any number with a 1 will be replaced with "Beep!" 2 takes precendence over 1, and 3 takes precedence over 2._
 
 | Behavior  |  Input Example | Output Example  |
 |---|---|---|
 | a number without 1, 2, or 3  | 4  | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4  |
 | a number with 1 | 10 | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5, 6, 7, 8, 9, Beep!  |
-| a number with 2  | 12  | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!  |
-| a number with 3  | 13  | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that.  |
+| a number with 2  | 2  | 0, Beep!, Boop!  |
+| a number with 3  | 3  | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that.  |
+| a number with 1 & 2  | 12  | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!  |
+| a number with 1 & 3  | 13  | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that.  |
+| a number with 2 & 3  | 23  | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!, Boop!, I'm sorry, Dave. I'm afraid I can't do that.  |
 
 ## Setup/Installation Requirements
 

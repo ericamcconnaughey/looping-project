@@ -1,10 +1,11 @@
 //Business Logic
 var nums = [];
-//var str = '<ul>';
 
 var beepBoop = function(num) {
   for (let currentNum = 0; currentNum <= num; currentNum++) {
-    if (currentNum.toString().includes("2")) {
+    if (currentNum.toString().includes("3")) {
+      nums.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (currentNum.toString().includes("2")) {
       nums.push("Boop!");
     } else if (currentNum.toString().includes("1")) {
       nums.push("Beep!");
@@ -12,7 +13,7 @@ var beepBoop = function(num) {
     nums.push(currentNum);
     }
   }
-  return nums;
+  return nums.join(", ");
 };
 
 
