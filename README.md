@@ -13,7 +13,7 @@ _This application takes an input number and will return a message to the user de
 | a number without 1, 2, or 3  | 4  | 0, 1, 2, 3, 4  |
 | a number with 1 | 10 | 0, Beep!, 2, 3, 4, 5, 6, 7, 8, 9, Beep!  |
 | a number with 2  | 12  | 0, Beep!, Boop!, 3, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!  |
-| a number with 3  | 13  | 0, Beep!, Boop!, 3, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that.  |
+| a number with 3  | 13  | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that.  |
 
 ## Setup/Installation Requirements
 

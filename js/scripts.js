@@ -2,16 +2,17 @@
 var nums = [];
 var str = '<ul>';
 
+
 var beepBoop = function(num) {
   for (let currentNum = 0; currentNum <= num; currentNum++) {
+    if (currentNum.toString().includes("1")) {
+      nums.push("Beep!");
+    } else {
     nums.push(currentNum);
+    }
   }
   return nums;
 
-  // for (var product = 1; num > 0; num--) {
-  //   product *= num; 
-  // }
-  // return product;
   // if () {
 
   // } else {
@@ -26,6 +27,7 @@ var beepBoop = function(num) {
 };
 
 
+
 //User Interface Logic
 $(document).ready(function() {
   $("form#machine").submit(function(event) {
@@ -33,18 +35,9 @@ $(document).ready(function() {
     var number = parseInt($("input#number").val());
     var result = beepBoop(number);
 
-    //hide form
-    $("#machine").hide();
-    
-    // $(".year").text(year);
+    //clear previous result
 
-    // if (!result) {
-    //   $(".not").text("not");
-    // } else {
-    //   $(".not").text("");
-    // }
-    
+    //show current result
     $("#result").text(result);
   })
-
 })
