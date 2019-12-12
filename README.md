@@ -26,7 +26,7 @@ _This application takes an input number and will return a message to the user de
 
 ## Known Bugs
 
-_Unknown at this time._
+_Result does not fade in the first time the form is submitted._
 
 ## Support and contact details
 
