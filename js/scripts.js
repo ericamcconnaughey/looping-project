@@ -23,10 +23,10 @@ $(document).ready(function() {
     let number = parseInt($("input#number").val());
     let result = beepBoop(number);
     $("#result").text(result);
-    $("#result").show();
+    $("#result").fadeIn();
   })
 
-  //Clear the Previous Result
+  //Clear the Previous Results
   $("#clear-btn").click(function(event) {
     event.preventDefault();
     $("#result").fadeOut();
