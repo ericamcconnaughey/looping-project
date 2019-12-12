@@ -9,22 +9,24 @@
   <script src="js/scripts.js"></script>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
-  <title>Looping Machine</title>
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mansalva&display=swap" rel="stylesheet">  <title>Looping Machine</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron bg-info">
       <h1>Looping Machine</h1>
     </div>
 
     <form id="machine">
       <div class="form-group">
         <label for="number">Enter a number and click submit!</label>
+        <br />
         <input id="number" type="text">
       </div>
 
-      <button type="submit" class="btn btn-success">Submit</button>
+      <button type="submit" class="btn" id="submit-btn">Submit</button>
+      <button type="reset" class="btn" id="clear-btn">Clear</button>
     </form>
     <br />
 

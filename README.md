@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application takes an input number and will return a message to the user depending on what number it was. Any number with a 3 will be replaced with "I'm sorry, Dave. I'm afraid I can't do that." Any number with a 2 will be replaced with "Boop!" And any number with a 1 will be replaced with "Beep!" 2 takes precendence over 1, and 3 takes precedence over 2._
+_This application takes an input number and will return a message to the user depending on what number it was. Essentially, all numbers from 0 to the input number will be displayed in the output; however, some numbers will be replaced with other words. Any number with a 3 will be replaced with "I'm sorry, Dave. I'm afraid I can't do that." Any number with a 2 will be replaced with "Boop!" And any number with a 1 will be replaced with "Beep!" 2 takes precendence over 1, and 3 takes precedence over 2._
 
 | Behavior  |  Input Example | Output Example  |
 |---|---|---|
