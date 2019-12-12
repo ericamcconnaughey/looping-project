@@ -1,6 +1,4 @@
 //Business Logic
-let str = '<ul>';
-
 var beepBoop = function(num) {
   let nums = [];
   for (let currentNum = 0; currentNum <= num; currentNum++) {
@@ -17,8 +15,6 @@ var beepBoop = function(num) {
   return nums.join(", ");
 };
 
-
-
 //User Interface Logic
 $(document).ready(function() {
   //Submit Form
@@ -26,14 +22,13 @@ $(document).ready(function() {
     event.preventDefault();
     let number = parseInt($("input#number").val());
     let result = beepBoop(number);
-    let currentText = $("#result").text();
-    let newText = currentText + result;
-    $("#result").text(newText);
+    $("#result").text(result);
+    $("#result").show();
   })
 
   //Clear the Previous Result
   $("#clear-btn").click(function(event) {
     event.preventDefault();
-    $("#result").empty();
+    $("#result").fadeOut();
   })
 })
